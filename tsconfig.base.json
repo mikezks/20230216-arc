@@ -16,8 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@flight42/logic-flight": ["libs/logic-flight/src/index.ts"],
-      "@flight42/shared-customizing": [
-        "libs/shared-customizing/src/index.ts"
+      "@flight42/shared-customizing": ["libs/shared-customizing/src/index.ts"],
+      "@workshop-customizing/luggage/domain": [
+        "libs/luggage/domain/src/index.ts"
+      ],
+      "@workshop-customizing/luggage/feature-checkin": [
+        "libs/luggage/feature-checkin/src/index.ts"
       ]
     }
   },
