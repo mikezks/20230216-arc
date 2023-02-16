@@ -11,9 +11,10 @@ export const BOOKING_ROUTES: Routes = [
       },
       {
         path: 'flight',
-        loadChildren: () => import('./flight/flight.module')
-          .then(esm => esm.FlightModule)
+        loadChildren: () => import('./flight/flight.routes')
       }
     ]
   }
 ];
+
+export default BOOKING_ROUTES;

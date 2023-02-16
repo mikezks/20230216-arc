@@ -14,7 +14,6 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: 'booking',
-    loadChildren: () => import('./booking/booking.module')
-      .then(esm => esm.BookingModule)
+    loadChildren: () => import('./booking')
   }
 ];

@@ -1,11 +1,15 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { NonNullableFormBuilder } from '@angular/forms';
+import { NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { FlightService } from '@flight42/logic-flight';
 import { filter, map, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-flight-edit',
+  standalone: true,
+  imports: [
+    ReactiveFormsModule
+  ],
   templateUrl: './edit.component.html'
 })
 export class EditComponent implements OnInit {

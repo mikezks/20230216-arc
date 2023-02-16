@@ -24,3 +24,5 @@ export const FLIGHT_ROUTES: Routes = [
   }
 
 ];
+
+export default FLIGHT_ROUTES;
